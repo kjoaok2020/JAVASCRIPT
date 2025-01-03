@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#A {
+            color: white;
+            font: 1.2em sans-serif;
+            text-align: center;
+            background-color: blueviolet;
+            width: 200px;
+            height: 100px;
+            padding-top: 80px;
+            border-radius: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="A">
+        espaço
+    </div>
+
+    <script>
+        var p = window.document.getElementById('A')
+        p.addEventListener('click', clicar)
+        p.addEventListener('mouseenter', entrar)
+        p.addEventListener('mouseout', saiu)
+
+        function clicar(){
+            p.innerText = 'clicou'
+            p.style.background = 'black'
+        }
+
+        function entrar(){
+            p.innerText = 'entrou'
+        }
+
+        function saiu(){
+            p.innerText ='saiu'
+            p.style.background = 'blueviolet'
+        }
+
+    </script>
+</body>
+</html>

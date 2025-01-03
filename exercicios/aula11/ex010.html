@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Radar do Detran</h1>
+    <input type="number" name="vel" id="vel">
+    <input type="button" value="verificar"  onclick="cliclou()">
+    <div id="radar">use o cinto</div>
+
+    <script>
+       
+        function cliclou(){
+        var v = window.document.getElementById('vel')
+        var n1 = Number(v.value)
+        var r = window.document.getElementById('radar')
+
+        r.innerHTML = (`sua velocidade é de <strong>${n1} km/h</strong>`)
+
+
+            if (n1 > 60){
+                r.innerHTML +=  ('<p>você foi multado</p>')
+
+            }else{
+                r.innerHTML += ('<p>você está dentro da lei meu chapa</p>')
+            }
+        }
+    </script>
+</body>
+</html>
