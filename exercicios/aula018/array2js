@@ -1,0 +1,11 @@
+var a = [9,4,6,7]
+a.push(2)
+a.sort()
+
+for(pos=0;pos<a.length;pos++){
+    console.log(`sua posição ${pos} o valor é ${a[pos]}`)
+}
+
+for( let pos in a){
+    console.log(`sua posição ${pos} o valor será ${a[pos]}`)
+}
