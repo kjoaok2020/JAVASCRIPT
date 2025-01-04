@@ -1,5 +1,5 @@
 var c = 1
-do{
+while (c <= 6){
     console.log(`repita ${c}`)
     c++
-}while (c <= 6)
+}
